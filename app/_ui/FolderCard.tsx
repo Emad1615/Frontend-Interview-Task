@@ -1,13 +1,9 @@
 "use client";
 import ShowFiles from "@/components/ShowFiles";
-import FilePreview from "@/components/ShowFiles";
 import { useBreadCrumbContext } from "@/lib/context/BreadCrumbContext";
 import { FileNode, FolderNode } from "@/lib/data";
 import React, { useState } from "react";
-import { BiSolidVideos } from "react-icons/bi";
-import { FaFolder, FaMusic } from "react-icons/fa";
-import { LuImage } from "react-icons/lu";
-import { SiGoogledocs } from "react-icons/si";
+import { FaFolder } from "react-icons/fa";
 import { CiFileOn } from "react-icons/ci";
 
 type Props = {

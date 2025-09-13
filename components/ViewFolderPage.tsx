@@ -18,7 +18,6 @@ export default function ViewFolderPage({ folder }: Props) {
           <CreateFileButton parentId={folder.id} />
         </div>
       </div>
-      {/* TODO: allow creating files */}
       <FolderList nodes={folder.children} />
     </div>
   );

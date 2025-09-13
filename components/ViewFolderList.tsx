@@ -4,8 +4,9 @@ import { useState, Suspense } from "react";
 import { CreateFolderButton } from "@/components/CreateFolderButton";
 import { CreateFileButton } from "@/components/CreateFileButton";
 import { FolderList } from "@/components/FolderList";
-import { breadCrumb, FolderNode } from "@/lib/data";
+import { FolderNode } from "@/lib/data";
 import BreadCrumb from "./BreadCrumb";
+import Spinner from "@/app/_ui/Spinner";
 
 interface Props {
   rootFolder: FolderNode;
@@ -17,7 +18,6 @@ export function ViewFolderList({ rootFolder, filter }: Props) {
   return (
     <div className="space-y-4">
       <div className="flex justify-between items-center gap-2">
-        {/* <h1 className="text-xl font-bold">{rootFolder.name}</h1> */}
         <BreadCrumb />
         <div className="flex gap-1">
           <CreateFolderButton parentId={selectedId} />
@@ -25,7 +25,7 @@ export function ViewFolderList({ rootFolder, filter }: Props) {
         </div>
       </div>
 
-      <Suspense fallback={<></>} key={filter}>
+      <Suspense fallback={<Spinner />} key={filter}>
         <FolderList
           nodes={rootFolder.children}
           filter={filter}

@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  AiOutlineFolder,
-  AiOutlineCloud,
-  AiOutlineHome,
-  AiFillFolder,
-  AiFillCloud,
-  AiFillHome,
-} from "react-icons/ai";
+import { AiOutlineFolder, AiFillFolder } from "react-icons/ai";
 import { VscRootFolder } from "react-icons/vsc";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -23,14 +16,6 @@ export const NavBar = (): JSX.Element => {
         ) : null}
         {pathname === "/" ? (
           <AiFillFolder fontSize={24} fill={"#8357fe"}></AiFillFolder>
-        ) : null}
-      </Link>
-      <Link href={"/cloud"} aria-label="go to cloud page" className="lg:my-4">
-        {pathname !== "/cloud" ? (
-          <AiOutlineCloud fontSize={24}></AiOutlineCloud>
-        ) : null}
-        {pathname === "/cloud" ? (
-          <AiFillCloud fontSize={24} fill={"#8357fe"}></AiFillCloud>
         ) : null}
       </Link>
       <Link

@@ -2,7 +2,7 @@
 
 import { useBreadCrumbContext } from "@/lib/context/BreadCrumbContext";
 import Link from "next/link";
-import { IoReturnUpBack } from "react-icons/io5";
+import { IoArrowUndoOutline } from "react-icons/io5";
 
 export default function BreadCrumb() {
   const { links, setLinks } = useBreadCrumbContext();
@@ -14,12 +14,12 @@ export default function BreadCrumb() {
   };
   return (
     <div className="flex gap-1 items-center justify-start my-1 ">
-      <p className="font-bold text-sm text-gray-600">BreadCrumb Nav ➡️</p>
-      {links.map((link) => (
+      <IoArrowUndoOutline size={18} className="text-indigo-600" />
+      {links.map((link, idx) => (
         <Link
           href={`/folder/${link.id}`}
-          key={link.id}
-          className=" text-gray-500 text-md capitalize font-light italic  "
+          key={idx}
+          className=" text-gray-500 text-md capitalize font-light italic  hover:text-indigo-500 transition-all duration-150"
           onClick={() => handleClick(link.id)}
         >
           {link.name}

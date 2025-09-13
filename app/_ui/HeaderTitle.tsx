@@ -2,6 +2,8 @@
 
 export const HeaderTitle = (): JSX.Element => {
   return (
-    <p className="font-semibold text-xl lg:text-3xl ">Welcome Our guest👋</p>
+    <p className="font-semibold text-xl lg:text-xl uppercase">
+      Welcome Our guest👋
+    </p>
   );
 };

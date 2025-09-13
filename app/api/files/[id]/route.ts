@@ -58,12 +58,12 @@ export async function POST(
     );
   }
 
-  // Construct the FileNode with url
   const newFile = {
     id: Date.now().toString(),
     name: safeName,
     type: "file" as const,
-    url: `/uploads/${safeName}`, // 👈 للـ preview
+    url: `/uploads/${safeName}`,
+    // url: `/api/preview/${safeName}`,
   };
 
   parent.children.push(newFile);

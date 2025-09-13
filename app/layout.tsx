@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import "./globals.css";
 import { NavBar } from "./_ui/NavBar";
 import dynamic from "next/dynamic";

@@ -1,8 +1,4 @@
 import { findFolder } from "@/lib/data";
-import { CreateFolderButton } from "@/components/CreateFolderButton";
-import { FolderList } from "@/components/FolderList";
-import { Suspense, useState } from "react";
-import { CreateFileButton } from "@/components/CreateFileButton";
 import { ViewFolderList } from "@/components/ViewFolderList";
 
 interface HomeProps {
