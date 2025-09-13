@@ -4,16 +4,16 @@ This repository contains a partially implemented file explorer built with **Next
 
 ## Existing Features
 
-* Basic layout with a sidebar and main area.
-* API endpoints to create folders and files.
-* An in-memory data structure representing a folder tree.
+- Basic layout with a sidebar and main area.
+- API endpoints to create folders and files.
+- An in-memory data structure representing a folder tree.
 
 ## Candidate Tasks
 
 1. Enable users to create files inside folders. This requires:
 
-   * Using the `/api/files/[id]` endpoint to add new files.
-   * Adding UI controls for file creation.
+   - Using the `/api/files/[id]` endpoint to add new files.
+   - Adding UI controls for file creation.
 
 2. Display different file types (e.g., `.png`, `.mp4`, `.pdf`).
 
@@ -25,8 +25,8 @@ This repository contains a partially implemented file explorer built with **Next
 
 6. Enhance the design to make it look and feel more like a real application. This includes:
 
-   * Responsive layout.
-   * Optimized file viewing.
+   - Responsive layout.
+   - Optimized file viewing.
 
 7. (Optional) Implement a **Recent Files** page.
 
@@ -36,11 +36,15 @@ This repository contains a partially implemented file explorer built with **Next
 
 1. A short video recording (maximum 2 minutes) demonstrating the functionality, including:
 
-   * Creating folders and files.
-   * Viewing files.
-   * Responsive design in action.
+   - Creating folders and files.
+   - Viewing files.
+   - Responsive design in action.
 
 2. A link to a GitHub repository containing the source code.
+
+## 🎥 Demo Video
+
+[![Demo Video](https://img.icons8.com/ios-filled/100/000000/play-button-circled.png)](https://github.com/Emad1615/Frontend-Interview-Task/blob/master/docs/video.mp4?raw=true)
 
 ## Design Reference
 
